@@ -8,6 +8,7 @@ import android.Manifest;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -81,10 +82,10 @@ public class thongtinchitiet extends AppCompatActivity {
                     String mota=txt_motasua.getText().toString();
 
                     sanpham sp4=new sanpham(sp2.getId(),ten,gia,"phanloai",mota,imageViewTOByte(imghinhsua) );
-                    Toast.makeText(thongtinchitiet.this, "đã sửa sản phẩm", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(thongtinchitiet.this, "đã sửa sản phẩm", Toast.LENGTH_SHORT).show();
                     ghidulieu(sp4);
-                    Intent intent = new Intent(thongtinchitiet.this, trangchu.class);
-                    startActivity(intent);
+                    //Intent intent = new Intent(thongtinchitiet.this, trangchu.class);
+                   // startActivity(intent);
                 }catch (Exception e){
                     e.printStackTrace();
                 }
@@ -150,17 +151,12 @@ public class thongtinchitiet extends AppCompatActivity {
         );
         ContentValues row = new ContentValues();
         row.put("ten", sp1.getTen().toString());
-        row.put("gia", sp1.getGia());
-        row.put("phamloai", sp1.getPhanloai());
+        row.put("gia",sp1.getGia());
+        row.put("phanloai", sp1.getPhanloai());
         row.put("mota", sp1.getMota());
         row.put("hinhanh", sp1.getAnh());
-        int updatedRowCount = database.update(
-                "sanpham",
-                row,
-                "id = ?",
-                new String[]{sp1.getId() + ""}
-        );
-        database.close();
+        int cs=database.update("sampham",row, "id=?",new String[]{sp1.getId()+""});
+        Toast.makeText(getApplicationContext(),cs+"111",Toast.LENGTH_LONG).show();
 
 
     }
