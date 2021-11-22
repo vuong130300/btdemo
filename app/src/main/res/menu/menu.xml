@@ -6,22 +6,20 @@
 
 
     <item
-        android:id="@+id/btnAdd"
-        android:orderInCategory="100"
-        android:title="Thêm sản phẩm"
-        android:icon="@android:drawable/ic_menu_add"
+        android:id="@+id/exit"
+        android:icon="@drawable/exit"
+        android:title="Exit"
         app:showAsAction="withText" />
-
     <item
         android:id="@+id/about"
         android:icon="@drawable/about"
         android:title="About"
         app:showAsAction="withText" />
-
     <item
-        android:id="@+id/exit"
-        android:icon="@drawable/exit"
-        android:title="Exit"
+        android:id="@+id/btnAdd"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="100"
+        android:title="Thêm sản phẩm"
         app:showAsAction="withText" />
 
 

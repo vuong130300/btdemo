@@ -20,10 +20,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Btdemo">
         <activity
-            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:name=".danhmucsanpham"
+            android:exported="false" />
+        <activity
             android:name=".thongtinchitiet"
             android:exported="false"
-            android:label="Chi tiết sản phẩm"/>
+            android:label="Chi tiết sản phẩm"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
         <activity
             android:name=".them"
             android:exported="false" />
@@ -48,7 +51,6 @@
             android:exported="false"
             android:label="Thông tin cá nhân" />
         <activity
-
             android:name=".trangchu"
             android:exported="false"
             android:label="Danh sách" />

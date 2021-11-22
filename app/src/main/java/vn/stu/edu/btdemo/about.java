@@ -114,6 +114,27 @@ public class about extends AppCompatActivity implements OnMapReadyCallback {
         mMap.addMarker(new MarkerOptions().position(stu).title("ĐHCN SÀI GÒN"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(stu, 18));
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuinflater = getMenuInflater();
+        menuinflater.inflate(R.menu.menu, menu);
+        return true;
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.about:
+                Intent intent1 = new Intent(about.this, about.class);
+                startActivity(intent1);
+                break;
+
+            case R.id.exit:
+                finish();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {

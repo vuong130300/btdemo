@@ -181,6 +181,8 @@ public class trangchu extends AppCompatActivity {
             case R.id.btnAdd:
                 Intent intent2 = new Intent(trangchu.this, them.class);
                 startActivity(intent2);
+            case R.id.exit:
+                finish();
         }
         return super.onOptionsItemSelected(item);
     }
