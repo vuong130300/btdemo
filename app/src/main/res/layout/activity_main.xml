@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/img2"
+    >
+
+
+    <EditText
+        android:id="@+id/txt_taikhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="180dp"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="Tài Khoản"
+        android:inputType="textPersonName"
+        android:textColorHint="#040303"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_matkhau"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="Mật Khẩu"
+        android:inputType="textPassword"
+        android:textColorHint="#131313"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_taikhoan" />
+
+    <Button
+        android:id="@+id/btn_dangnhap"
+        android:layout_width="153dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="176dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_matkhau" />
+</androidx.constraintlayout.widget.ConstraintLayout>
