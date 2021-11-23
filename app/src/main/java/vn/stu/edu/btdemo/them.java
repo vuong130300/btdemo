@@ -21,6 +21,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -32,7 +33,8 @@ import vn.stu.edu.btdemo.model.sanpham;
 
 public class them extends AppCompatActivity {
     EditText txt_ten, txt_gia,txt_mota;
-    Button btn_upload, btn_them,btn_back;
+    Button  btn_them,btn_back;
+    ImageButton btn_upload;
     ImageView imgsanpham;
     private int REQUEST_CAMERA = 0, SELECT_FILE = 1;
     private Button btnSelect;

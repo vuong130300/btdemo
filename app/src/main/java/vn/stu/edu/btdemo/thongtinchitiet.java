@@ -18,6 +18,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -29,7 +30,8 @@ import vn.stu.edu.btdemo.model.sanpham;
 
 public class thongtinchitiet extends AppCompatActivity {
     EditText txt_idsua,txt_tensua,txt_giasua,txt_phanloaisua,txt_motasua;
-    Button btn_sua,btn_uploadsua,btn_backsua;
+    Button btn_sua,btn_backsua;
+    ImageButton btn_uploadsua;
     ImageView imghinhsua;
     private int REQUEST_CAMERA = 0, SELECT_FILE = 1;
     final int REQUEST_CODE_GALLERY = 999;
