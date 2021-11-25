@@ -19,11 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Btdemo"
-
         >
-        <activity
-            android:name=".danhmucsanpham"
-            android:exported="false" />
+
         <activity
             android:name=".thongtinchitiet"
             android:exported="false"

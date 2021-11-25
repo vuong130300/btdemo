@@ -158,7 +158,7 @@ public class thongtinchitiet extends AppCompatActivity {
         row.put("mota", sp1.getMota());
         row.put("hinhanh", sp1.getAnh());
         int cs=database.update("sampham",row, "id=?",new String[]{sp1.getId()+""});
-        Toast.makeText(getApplicationContext(),cs+"111",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),cs+"đã sửa",Toast.LENGTH_LONG).show();
 
 
     }
