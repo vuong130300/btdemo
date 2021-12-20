@@ -131,7 +131,8 @@ public class about extends AppCompatActivity implements OnMapReadyCallback {
                 break;
 
             case R.id.exit:
-                finish();
+                Intent intent2 = new Intent(about.this, trangchu.class);
+                startActivity(intent2);
         }
         return super.onOptionsItemSelected(item);
     }
